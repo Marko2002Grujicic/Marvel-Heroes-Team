@@ -7,7 +7,7 @@
   width: 70vw;
   height: 80vh;
   border-radius: 12px;
-  background-color: lightgray;
+  background-color: #898787;
   display: flex;
   flex-direction: column;
   padding: 25px;
@@ -21,7 +21,8 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  border-bottom: 1px solid gray;
+  color: black;
+  border-bottom: 1px solid black;
 }
 div.row.title::after {
   content: none !important;
@@ -35,14 +36,14 @@ div.row.title::after {
   border: none;
   font-size: 40px;
   cursor: pointer;
-  color: #484848;
+  color: black;
 }
 .gray-info {
-  color: gray;
+  color: white;
   font-size: 20px;
 }
 .gray-data {
-  color: #484848;
+  color: black;
   font-size: 1.8vw;
   padding-bottom: 10px;
 }
