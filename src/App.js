@@ -4,7 +4,7 @@ import Header from './Header';
 import MainContent from './MainContent';
 import { Route, Routes } from 'react-router';
 import SingleHeroPage from './SingleHeroPage/SingleHeroPage';
-
+import 'materialize-css/dist/css/materialize.min.css'
 
 function App() {
   const [heroes, setHeroes] = useState([]);

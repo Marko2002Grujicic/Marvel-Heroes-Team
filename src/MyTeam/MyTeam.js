@@ -1,42 +1,30 @@
 import './MyTeam.css'
-const MyTeam = () =>{
+import {FaTrash} from 'react-icons/fa'
+const MyTeam = ({teamMembers, setTeamMembers}) =>{
+    const removeHero = (id) =>{
+        setTeamMembers((prevTeamMembers) => prevTeamMembers.filter((hero) => hero.id !== id))
+    }
     return (
-        <div className="myteam-container">
-            <h2>My Team</h2>
-            <div className="myteam">
-                <div className="myteam-card">
-                    <div className='myteam-image'>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQR0a6RFCoYeCp0AkLYuqE0i-LnpUMu8JG39mdJBs&s"  alt="My Team Hero"/>
+        <div className="container my-team col l12 s8">
+            <h4 className='myteam'>My Team</h4>
+            <div className='row'>
+                {teamMembers && teamMembers.length === 0 ? (<p>Add some heroes to your team!</p>) : (teamMembers.map(hero => (
+
+                    <div className="card horizontal">
+                        <div className='myteam-image'>
+                            <img src={`${hero.thumbnail.path}.${hero.thumbnail.extension}`}  alt="My Team  Hero"/>
+                            <FaTrash className='trashIcon' onClick={()=> removeHero(hero.id)}/>
+                        </div>
+                            <div className='card-content-myteam col'>
+                                <span className="myteam-hero">{hero.name}</span>
+                            </div>
                     </div>
-                
-                    <span className="myteam-hero">Some hero</span>
-                </div>
-          
-        
-                <div className="myteam-card">
-                    <div className='myteam-image'>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQR0a6RFCoYeCp0AkLYuqE0i-LnpUMu8JG39mdJBs&s"  alt="My Team Hero"/>
-                    </div>
-                    <span className="myteam-hero">Some hero</span>
-                </div>
-           
-                <div className="myteam-card">
-                    <div className='myteam-image'>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQR0a6RFCoYeCp0AkLYuqE0i-LnpUMu8JG39mdJBs&s"  alt="My Team Hero"/>
-                    </div>
-                
-                    <span className="myteam-hero">Some hero</span>
-                </div>
+                    
+                ))) 
+                }
+            </div>
             
-                <div className="myteam-card">
-                    <div className='myteam-image'>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQR0a6RFCoYeCp0AkLYuqE0i-LnpUMu8JG39mdJBs&s"  alt="My Team Hero"/>
-                    </div>
-                
-                    <span className="myteam-hero">Some hero</span>
-                </div>
-            </div>
-            </div>
+         </div>
     )
 }
 export default MyTeam;

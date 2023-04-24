@@ -1,7 +1,12 @@
+import { useNavigate } from 'react-router';
 import './Header.css'
 const Header = () =>{
+    const navigate = useNavigate()
     return (
-        <header>Marvel Hero Team</header>
+        <div>
+            <header onClick={() => navigate('/')}>Marvel Hero Team</header>
+        </div>
+        
     )
 }
 export default Header;

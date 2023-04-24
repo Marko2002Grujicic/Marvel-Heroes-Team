@@ -1,0 +1,135 @@
+.modalBackground {
+  position: fixed;
+  left: 15%;
+  top: 15%;
+}
+.modalContainer {
+  width: 70vw;
+  height: 80vh;
+  border-radius: 12px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  border: 1px solid black;
+}
+.text {
+  font-size: 25px;
+}
+.modalContainer .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid gray;
+}
+div.row.title::after {
+  content: none !important;
+}
+.text-container {
+  white-space: normal;
+}
+
+#button {
+  background-color: transparent;
+  border: none;
+  font-size: 40px;
+  cursor: pointer;
+  color: #484848;
+}
+.gray-info {
+  color: gray;
+  font-size: 20px;
+}
+.gray-data {
+  color: #484848;
+  font-size: 1.8vw;
+  padding-bottom: 10px;
+}
+.notes .gray-info {
+  font-size: 30px;
+}
+
+@media screen and (max-width: 1440px) {
+  .gray-info {
+    color: gray;
+    font-size: 20px;
+  }
+  .gray-data {
+    color: #484848;
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+  .notes .gray-info {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .gray-info {
+    color: gray;
+    font-size: 20px;
+  }
+  .gray-data {
+    color: #484848;
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+  .notes .gray-info {
+    font-size: 30px;
+  }
+
+  .text-container {
+    white-space: normal;
+  }
+  .modalContainer {
+    width: 80vw;
+    height: 60vh;
+    border-radius: 12px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 25px px;
+    overflow: auto;
+  }
+  .modalBackground {
+    position: fixed;
+    left: 10%;
+    top: 20%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 10px;
+  }
+  .gray-info {
+    color: gray;
+    font-size: 20px;
+  }
+  .gray-data {
+    color: #484848;
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+  .notes .gray-info {
+    font-size: 30px;
+  }
+
+  .text-container {
+    white-space: normal;
+  }
+  .modalContainer {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 12px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 25px px;
+    overflow: auto;
+  }
+  .modalBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+}

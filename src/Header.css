@@ -1,8 +1,12 @@
 header {
   padding: 20px;
   font-size: 40px;
-  background-color: tomato;
+  background-color: #b41f23;
   color: white;
   text-align: left;
   padding-left: 10%;
+  margin-bottom: 0;
+}
+header:hover {
+  cursor: pointer;
 }
