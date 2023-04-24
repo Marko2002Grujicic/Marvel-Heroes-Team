@@ -14,7 +14,7 @@ const SingleHeroPage = () =>{
         .then((data)=> {
           setSingleHero(data.data.results[0]);
         })
-      }, [])
+      }, [id])
   
 
       const handleToggleComics = () => {
