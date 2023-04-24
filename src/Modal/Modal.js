@@ -27,7 +27,7 @@ const Modal = ({comic, setOpenModal}) => {
                         <h6 className="gray-info">Characters</h6>
                         <ul className="gray-data ">
                             {comic.characters.items.map(character => (
-                                <li key={character.name} className="text">-{character.name}</li>
+                                <span key={character.name} className="text">{character.name},</span>
                             ))}
                             </ul>
                         </div>

@@ -9,7 +9,7 @@ const SingleHeroPage = () =>{
     const [showComics, setShowComics] = useState("yes")
     useEffect(() => {
         const APIKey = '354ccd1ec621ef1a5005bc23b26f8aa6'
-        fetch(`http://gateway.marvel.com/v1/public/characters/${id}?apikey=${APIKey}`)
+        fetch(`https://gateway.marvel.com/v1/public/characters/${id}?apikey=${APIKey}`)
         .then((res) => res.json())
         .then((data)=> {
           setSingleHero(data.data.results[0]);

@@ -5,7 +5,7 @@ const SearchedHeroes = ({term, handleHeroClick, addHero}) =>{
         const [searchedHero, setSearchedHero] = useState([]);
         useEffect(() => {
             const APIKey = '354ccd1ec621ef1a5005bc23b26f8aa6'
-            fetch(`http://gateway.marvel.com/v1/public/characters?nameStartsWith=${term}&apikey=${APIKey}`)
+            fetch(`https://gateway.marvel.com/v1/public/characters?nameStartsWith=${term}&apikey=${APIKey}`)
             .then((res) => res.json())
             .then((data)=> {
               setSearchedHero(data.data.results);
