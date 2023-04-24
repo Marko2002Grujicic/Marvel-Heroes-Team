@@ -14,15 +14,26 @@
 
 <!-- ABOUT THE PROJECT -->
 
-## About The Project:-
+## About The Project:
+
+### Homepage:
 
 ![Preview](./homepage.png)
 
 On the homepage the user can see all the heroes available and add them to your team or read more information on them
+
+### Character page:
+
 ![Preview](./characterpage.png)
 On the character page the user can see all the information relevant to that character
+
+### Comics:
+
 ![Preview](./comics.png)
 By clicking on each comic a modal will pop up giving the user all the information about that comic
+
+### Modal preview:
+
 ![Preview](./modal.png)
 Modal previewing all information
 
