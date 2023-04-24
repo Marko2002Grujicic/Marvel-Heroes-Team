@@ -1,4 +1,4 @@
-import './App.css';
+
 import { useEffect, useState } from 'react';
 import Header from './Header';
 import MainContent from './MainContent';
@@ -20,7 +20,7 @@ function App() {
   }, [])
 
   return (
-    <div className="App">
+    <div className="App grey darken-4">
       <Header/>
       <Routes>
         <Route path='/' element={<MainContent heroes={heroes} setHeroes={setHeroes} searchQuery={searchQuery} setSearchQuery={setSearchQuery}/>}></Route>

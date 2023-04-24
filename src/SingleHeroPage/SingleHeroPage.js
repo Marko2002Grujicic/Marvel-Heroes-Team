@@ -23,7 +23,7 @@ const SingleHeroPage = () =>{
       }
       
     return(
-        <> {Object.keys(singleHero).length > 0 ? (
+        <div className="grey darken-4"> {Object.keys(singleHero).length > 0 ? (
         <div className="row gap">
             <div className="col l6 s12">
             <img src={singleHero.thumbnail.path + '.' + singleHero.thumbnail.extension} alt={singleHero.name} className='singlePage-cover'/>
@@ -67,8 +67,7 @@ const SingleHeroPage = () =>{
             </div>
         </div>
         )}
-        </>
-        
+        </div>
     )
 }
 export default SingleHeroPage;

@@ -28,9 +28,9 @@ const MainContent = ({heroes, searchQuery, setSearchQuery}) => {
         setSearchQuery("");
       };
     return(
-        <div className="wrapper black">
+        <div className="wrapper grey darken-4">
             <Search searchQuery={searchQuery} setSearchQuery={setSearchQuery}/>
-            <div className="row">
+            <div className="row no-margin">
             <div className="col l3 m8 s10 right">
                     <MyTeam teamMembers={teamMembers} setTeamMembers={setTeamMembers}/>
                 </div> 

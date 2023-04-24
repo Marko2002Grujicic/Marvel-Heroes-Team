@@ -1,10 +1,16 @@
 .singlePage-cover {
   width: 80%;
   height: 100%;
+  color: white;
+}
+.no-margin {
+  margin-bottom: 0 !important;
 }
 .gap {
   padding-top: 2%;
   width: 80%;
+  color: white;
+  margin-bottom: 0 !important;
 }
 .padding-top {
   padding-top: 2%;
