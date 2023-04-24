@@ -11,8 +11,7 @@ function App() {
   const [searchQuery, setSearchQuery] = useState("")
 
   useEffect(() => {
-    const APIKey = '354ccd1ec621ef1a5005bc23b26f8aa6'
-    fetch(`http://gateway.marvel.com/v1/public/characters?apikey=${APIKey}`)
+    fetch(`http://gateway.marvel.com/v1/public/characters?apikey=354ccd1ec621ef1a5005bc23b26f8aa6`)
     .then((res) => res.json())
     .then((data)=> {
       setHeroes(data.data.results);
